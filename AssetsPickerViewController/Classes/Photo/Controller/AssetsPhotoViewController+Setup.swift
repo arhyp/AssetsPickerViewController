@@ -16,11 +16,11 @@ extension AssetsPhotoViewController {
     }
     
     func setupBarButtonItems() {
-        navigationItem.leftBarButtonItem = cancelButtonItem
+//        navigationItem.leftBarButtonItem = cancelButtonItem
         if pickerConfig.assetIsShowCameraButton {
-            navigationItem.rightBarButtonItems = [doneButtonItem, takeButtonItem]
+//            navigationItem.rightBarButtonItems = [doneButtonItem, takeButtonItem]
         } else {
-            navigationItem.rightBarButtonItems = [doneButtonItem]
+//            navigationItem.rightBarButtonItems = [doneButtonItem]
         }
         doneButtonItem.isEnabled = false
     }

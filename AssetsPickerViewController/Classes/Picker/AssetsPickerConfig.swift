@@ -58,13 +58,13 @@ open class AssetsPickerConfig : NSObject {
     open var albumCellType: AnyClass = AssetsAlbumCell.classForCoder()
     open var albumDefaultSpace: CGFloat = 20
     open var albumLineSpace: CGFloat = -1
-    public let albumPortraitDefaultColumnCount: Int = UI_USER_INTERFACE_IDIOM() == .pad ? 3 : 2
+    public let albumPortraitDefaultColumnCount: Int = UIDevice.current.userInterfaceIdiom == .pad ? 3 : 2
     open var albumPortraitColumnCount: Int?
     open var albumPortraitForcedCellWidth: CGFloat?
     open var albumPortraitForcedCellHeight: CGFloat?
     open var albumPortraitCellSize: CGSize = .zero
     
-    public let albumLandscapeDefaultColumnCount: Int = UI_USER_INTERFACE_IDIOM() == .pad ? 4 : 3
+    public let albumLandscapeDefaultColumnCount: Int = UIDevice.current.userInterfaceIdiom == .pad ? 4 : 3
     open var albumLandscapeColumnCount: Int?
     open var albumLandscapeForcedCellWidth: CGFloat?
     open var albumLandscapeForcedCellHeight: CGFloat?

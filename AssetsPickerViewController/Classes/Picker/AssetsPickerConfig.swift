@@ -108,7 +108,7 @@ open class AssetsPickerConfig : NSObject {
             return _assetCacheSize
         }
     }
-    open var assetPortraitColumnCount: Int = UI_USER_INTERFACE_IDIOM() == .pad ? 5 : 3
+    open var assetPortraitColumnCount: Int = UIDevice.current.userInterfaceIdiom == .pad ? 5 : 3
     open var assetPortraitInteritemSpace: CGFloat = 1
     open var assetPortraitLineSpace: CGFloat = 1
     
@@ -118,7 +118,7 @@ open class AssetsPickerConfig : NSObject {
         return CGSize(width: edge, height: edge)
     }
     
-    open var assetLandscapeColumnCount: Int = UI_USER_INTERFACE_IDIOM() == .pad ? 7 : 5
+    open var assetLandscapeColumnCount: Int = UIDevice.current.userInterfaceIdiom == .pad ? 7 : 5
     open var assetLandscapeInteritemSpace: CGFloat = 1.5
     open var assetLandscapeLineSpace: CGFloat = 1.5
     
